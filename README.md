@@ -1,3 +1,5 @@
+Forked: https://github.com/allonsmandy - Excelente explicação dos princípios do S.O.L.I.D 👏📚
+
 ## Principios do S.O.L.I.D
 
 São principios da programação que foram reunidos para nos ajudar a manter um código limpo e flexível e fácil de ser mantido.
