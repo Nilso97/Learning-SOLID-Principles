@@ -1,4 +1,4 @@
-Forked: https://github.com/allonsmandy - Excelente explicação dos princípios do S.O.L.I.D 👏📚
+Forked: https://github.com/allonsmandy/solid-typescript - Excelente explicação dos princípios do S.O.L.I.D 👏📚
 
 ## Principios do S.O.L.I.D
 
