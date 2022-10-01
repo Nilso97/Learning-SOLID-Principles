@@ -6,5 +6,6 @@
   "license": "MIT",
   "devDependencies": {
     "typescript": "^4.8.4"
-  }
+  },
+  "repository": "https://github.com/Nilso97/SOLID-Principles.git"
 }

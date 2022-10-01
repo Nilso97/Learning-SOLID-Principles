@@ -1,0 +1,21 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const order_1 = require("../OCP/class/order");
+const discount_1 = require("./class/discount");
+const shopping_cart_1 = require("./class/shopping-cart");
+const messaging_1 = require("./services/messaging");
+const persistency_1 = require("./services/persistency");
+// Descontos em %
+const fiftyPercentDiscount = new discount_1.FiftyPercentDiscount();
+const sixtyPercentDiscount = new discount_1.SixtyPercentDiscount();
+const seventyPercentDiscount = new discount_1.SeventyPercentDiscount();
+const shoppingCart = new shopping_cart_1.ShoppingCart(seventyPercentDiscount);
+const messaging = new messaging_1.Messaging();
+const persistency = new persistency_1.Persistency();
+const order = new order_1.Order(shoppingCart, messaging, persistency);
+shoppingCart.addItem({ name: "dress", price: 31.0 });
+shoppingCart.addItem({ name: "leg", price: 25.8 });
+console.log(shoppingCart.items);
+console.log(`Total c/ desconto: R$${shoppingCart.totalWithDiscount().toFixed(2)}`);
+order.checkout();
+console.log(order.orderStatus);
