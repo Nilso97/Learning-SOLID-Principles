@@ -10,7 +10,7 @@ import { Messaging } from "./services/messaging";
 import { Persistency } from "./services/persistency";
 
 const tenPercentDiscount = new TenPercentDiscount();
-const fiftyPercrentDiscount = new FiftyPercentDiscount();
+const fiftyPercentDiscount = new FiftyPercentDiscount();
 const noDiscount = new NoDiscount();
 
 const shoppingCart = new ShoppingCart(noDiscount);
